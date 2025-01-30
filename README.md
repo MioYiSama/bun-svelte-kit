@@ -33,6 +33,7 @@ bun run build && bun run start
 - @eslint/js
 - typescript-eslint
 - eslint-plugin-svelte
+- eslint-config-prettier
 
 ### Formatting
 

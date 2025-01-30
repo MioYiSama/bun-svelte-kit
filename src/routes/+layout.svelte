@@ -1,25 +1,11 @@
 <script lang="ts">
+  import type { Snippet } from "svelte";
   import "../app.css";
+  import { _darkMode } from "./+layout";
 
-  let { children } = $props();
+  const { children }: { children: Snippet } = $props();
 </script>
 
+<svelte:document use:_darkMode />
+
 {@render children()}
-
-<svelte:head>
-  <script>
-    const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-    function update(ev) {
-      if (ev.matches) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    }
-
-    update(darkQuery);
-
-    darkQuery.addEventListener("change", update);
-  </script>
-</svelte:head>

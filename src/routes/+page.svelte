@@ -2,13 +2,15 @@
   let count = $state(0);
 
   function onclick() {
-    count++;
+    ++count;
   }
 </script>
 
 <button {onclick}>
   Count: {count}
 </button>
+
+<a href="/about">About</a>
 
 <style>
   @reference "tailwindcss/theme";
@@ -18,5 +20,9 @@
     @apply border dark:border-white;
     @apply hover:bg-gray-200 dark:hover:bg-gray-800;
     @apply active:bg-gray-400 dark:active:bg-gray-600;
+  }
+
+  a {
+    @apply underline;
   }
 </style>
