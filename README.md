@@ -10,6 +10,8 @@ Template project for **Bun** + **Svelte Kit**
 bun install
 bun --bun run svelte-kit sync
 bun run dev
+bun run format
+bun run lint
 bun run build && bun run start
 ```
 

@@ -7,9 +7,9 @@ export default ts.config(
   js.configs.recommended,
   ts.configs.strictTypeChecked,
   ts.configs.stylisticTypeChecked,
-  prettier,
   svelte.configs["flat/recommended"],
   svelte.configs["flat/prettier"],
+  prettier,
   {
     languageOptions: {
       parserOptions: {
@@ -17,9 +17,6 @@ export default ts.config(
         tsconfigRootDir: import.meta.dirname,
       },
     },
-  },
-  {
-    ignores: ["eslint.config.js"],
   },
   {
     files: ["**/*.svelte"],

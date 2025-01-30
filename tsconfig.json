@@ -1,5 +1,6 @@
 {
   "extends": "./.svelte-kit/tsconfig.json",
+  "files": ["svelte.config.js", "eslint.config.ts", "static/darkmode.js"],
   "compilerOptions": {
     // Enable latest features
     "lib": ["ESNext", "DOM"],
