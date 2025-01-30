@@ -6,13 +6,26 @@ Template project for **Bun** + **Svelte Kit**
 
 ## Usage
 
+### Setup
+
 ```bash
 bun install
-bun --bun run svelte-kit sync
+bun run sync
+```
+
+### Dev
+
+```bash
 bun run dev
 bun run format
 bun run lint
-bun run build && bun run start
+```
+
+### Prod
+
+```bash
+bun run build
+bun run start
 ```
 
 ## Dependencies
