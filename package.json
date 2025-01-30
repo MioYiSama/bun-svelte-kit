@@ -2,12 +2,12 @@
   "name": "bun-svelte-kit",
   "type": "module",
   "scripts": {
-    "sync": "bun --bun run svelte-kit sync",
+    "prepare": "bun --bun run svelte-kit sync",
     "dev": "bun --bun run vite dev",
     "build": "bun --bun run vite build",
     "start": "cd build && bun start",
     "format": "bun --bun run prettier --write ./src",
-    "lint": "bun --bun run eslint ."
+    "lint": "bun --bun run eslint"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

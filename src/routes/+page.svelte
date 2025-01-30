@@ -1,15 +1,21 @@
 <script lang="ts">
+  import type { PageData } from "./$types";
   let count = $state(0);
 
   function onclick() {
     ++count;
   }
+
+  const { data }: { data: PageData } = $props();
 </script>
 
 <button {onclick}>
   Count: {count}
 </button>
-
+<p>{data.value}</p>
+<p>{data.x}</p>
+<p>{data.y}</p>
+<p>{data.z}</p>
 <a href="/about">About</a>
 
 <style>

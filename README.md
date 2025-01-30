@@ -10,7 +10,6 @@ Template project for **Bun** + **Svelte Kit**
 
 ```bash
 bun install
-bun run sync
 ```
 
 ### Dev
