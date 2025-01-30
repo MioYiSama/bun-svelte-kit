@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
 const classList = document.documentElement.classList;

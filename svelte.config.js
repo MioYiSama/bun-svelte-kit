@@ -12,7 +12,12 @@ export default {
       config(config) {
         return {
           ...config,
-          include: ["../src/**/*", "../*.config.js", "../*.config.ts"],
+          include: [
+            "../src/**/*",
+            "../static/**/*.js",
+            "../*.config.js",
+            "../*.config.ts",
+          ],
         };
       },
     },
