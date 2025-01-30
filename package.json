@@ -2,6 +2,7 @@
   "name": "bun-svelte-kit",
   "type": "module",
   "scripts": {
+    "sync": "bun --bun run svelte-kit sync",
     "dev": "bun --bun run vite dev",
     "build": "bun --bun run vite build",
     "start": "cd build && bun start",

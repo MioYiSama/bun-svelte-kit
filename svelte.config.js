@@ -6,5 +6,13 @@ export default {
   preprocess: vitePreprocess(),
   kit: {
     adapter: adapter(),
+    typescript: {
+      config(config) {
+        return {
+          ...config,
+          include: ["../src/**/*", "../*.config.js", "../*.config.ts"],
+        };
+      },
+    },
   },
 };
