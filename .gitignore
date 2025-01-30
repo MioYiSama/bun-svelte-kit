@@ -1,5 +1,6 @@
-.DS_Store
-.svelte-kit
-build
-node_modules
+/.svelte-kit
+/node_modules
+/build
 bun.lock
+
+.DS_Store

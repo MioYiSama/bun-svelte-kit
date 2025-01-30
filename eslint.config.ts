@@ -12,6 +12,9 @@ export default ts.config(
   svelte.configs["flat/prettier"],
   prettier,
   {
+    ignores: [".svelte-kit/**/*", "node_modules/**/*", "build/**/*"],
+  },
+  {
     languageOptions: {
       globals: {
         ...globals.browser,
