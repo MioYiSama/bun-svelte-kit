@@ -5,7 +5,9 @@ import adapter from "svelte-adapter-bun";
 export default {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      precompress: true,
+    }),
     typescript: {
       config(config) {
         return {
